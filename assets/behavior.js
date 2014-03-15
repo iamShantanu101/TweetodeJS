@@ -6,6 +6,313 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
 
   tableOfContents = [
     {
+      "type": "folder",
+      "data": {
+        "path": "controllers",
+        "title": "controllers"
+      },
+      "depth": 1,
+      "children": [
+        {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/controllers/comments.js",
+            "projectPath": "app/controllers/comments.js",
+            "targetPath": "controllers/comments",
+            "pageTitle": "controllers/comments",
+            "title": "comments"
+          },
+          "depth": 2,
+          "outline": [
+            {
+              "type": "heading",
+              "data": {
+                "level": 3,
+                "title": "Create Comment",
+                "slug": "create-comment"
+              },
+              "depth": 3
+            }, {
+              "type": "heading",
+              "data": {
+                "level": 3,
+                "title": "Delete Comment",
+                "slug": "delete-comment"
+              },
+              "depth": 3
+            }
+          ]
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/controllers/dashboard.js",
+            "projectPath": "app/controllers/dashboard.js",
+            "targetPath": "controllers/dashboard",
+            "pageTitle": "controllers/dashboard",
+            "title": "dashboard"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/controllers/favorites.js",
+            "projectPath": "app/controllers/favorites.js",
+            "targetPath": "controllers/favorites",
+            "pageTitle": "controllers/favorites",
+            "title": "favorites"
+          },
+          "depth": 2,
+          "outline": [
+            {
+              "type": "heading",
+              "data": {
+                "level": 3,
+                "title": "Create Favorite",
+                "slug": "create-favorite"
+              },
+              "depth": 3
+            }, {
+              "type": "heading",
+              "data": {
+                "level": 3,
+                "title": "Delete Favorite",
+                "slug": "delete-favorite"
+              },
+              "depth": 3
+            }
+          ]
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/controllers/follows.js",
+            "projectPath": "app/controllers/follows.js",
+            "targetPath": "controllers/follows",
+            "pageTitle": "controllers/follows",
+            "title": "follows"
+          },
+          "depth": 2,
+          "outline": [
+            {
+              "type": "heading",
+              "data": {
+                "level": 2,
+                "title": "Follow",
+                "slug": "follow"
+              },
+              "depth": 2
+            }
+          ]
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/controllers/tweets.js",
+            "projectPath": "app/controllers/tweets.js",
+            "targetPath": "controllers/tweets",
+            "pageTitle": "controllers/tweets",
+            "title": "tweets"
+          },
+          "depth": 2,
+          "outline": [
+            {
+              "type": "heading",
+              "data": {
+                "level": 2,
+                "title": "Tweet Controller",
+                "slug": "tweet-controller"
+              },
+              "depth": 2,
+              "children": [
+                {
+                  "type": "heading",
+                  "data": {
+                    "level": 3,
+                    "title": "New Tweet",
+                    "slug": "new-tweet"
+                  },
+                  "depth": 3
+                }, {
+                  "type": "heading",
+                  "data": {
+                    "level": 3,
+                    "title": "Create a Tweet",
+                    "slug": "create-a-tweet"
+                  },
+                  "depth": 3
+                }, {
+                  "type": "heading",
+                  "data": {
+                    "level": 3,
+                    "title": "Edit Tweet",
+                    "slug": "edit-tweet"
+                  },
+                  "depth": 3
+                }, {
+                  "type": "heading",
+                  "data": {
+                    "level": 3,
+                    "title": "Show Tweet",
+                    "slug": "show-tweet"
+                  },
+                  "depth": 3
+                }, {
+                  "type": "heading",
+                  "data": {
+                    "level": 3,
+                    "title": "Update a tweet",
+                    "slug": "update-a-tweet"
+                  },
+                  "depth": 3
+                }, {
+                  "type": "heading",
+                  "data": {
+                    "level": 3,
+                    "title": "Delete a tweet",
+                    "slug": "delete-a-tweet"
+                  },
+                  "depth": 3
+                }
+              ]
+            }
+          ]
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/controllers/users.js",
+            "projectPath": "app/controllers/users.js",
+            "targetPath": "controllers/users",
+            "pageTitle": "controllers/users",
+            "title": "users"
+          },
+          "depth": 2,
+          "outline": []
+        }
+      ]
+    }, {
+      "type": "folder",
+      "data": {
+        "path": "models",
+        "title": "models"
+      },
+      "depth": 1,
+      "children": [
+        {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/models/tweets.js",
+            "projectPath": "app/models/tweets.js",
+            "targetPath": "models/tweets",
+            "pageTitle": "models/tweets",
+            "title": "tweets"
+          },
+          "depth": 2,
+          "outline": [
+            {
+              "type": "heading",
+              "data": {
+                "level": 2,
+                "title": "Static Methods in the TweetSchema",
+                "slug": "static-methods-in-the-tweetschema"
+              },
+              "depth": 2
+            }
+          ]
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/models/user.js",
+            "projectPath": "app/models/user.js",
+            "targetPath": "models/user",
+            "pageTitle": "models/user",
+            "title": "user"
+          },
+          "depth": 2,
+          "outline": [
+            {
+              "type": "heading",
+              "data": {
+                "level": 2,
+                "title": "Define UserSchema",
+                "slug": "define-userschema"
+              },
+              "depth": 2
+            }
+          ]
+        }
+      ]
+    }, {
       "type": "file",
       "data": {
         "language": {
@@ -17,55 +324,34 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
         "projectPath": "readme.md",
         "targetPath": "readme",
         "pageTitle": "readme",
-        "firstHeader": {
-          "type": "heading",
-          "data": {
-            "level": 1,
-            "title": "Node Twitter",
-            "slug": "node-twitter",
-            "isFileHeader": true
-          },
-          "depth": 1,
-          "children": [
-            {
-              "type": "heading",
-              "data": {
-                "level": 3,
-                "title": "Installation instruction",
-                "slug": "installation-instruction"
-              },
-              "depth": 3
-            }, {
-              "type": "heading",
-              "data": {
-                "level": 2,
-                "title": "Contributions:",
-                "slug": "contributions"
-              },
-              "depth": 2
-            }, {
-              "type": "heading",
-              "data": {
-                "level": 2,
-                "title": "Author",
-                "slug": "author"
-              },
-              "depth": 2
-            }
-          ]
-        },
-        "title": "Node Twitter"
+        "title": "readme"
       },
       "depth": 1,
       "outline": [
         {
           "type": "heading",
           "data": {
-            "level": 3,
-            "title": "Installation instruction",
-            "slug": "installation-instruction"
+            "level": 2,
+            "title": "Node Twitter",
+            "slug": "node-twitter"
           },
-          "depth": 3
+          "depth": 2
+        }, {
+          "type": "heading",
+          "data": {
+            "level": 2,
+            "title": "Installation",
+            "slug": "installation"
+          },
+          "depth": 2
+        }, {
+          "type": "heading",
+          "data": {
+            "level": 2,
+            "title": "Using the App",
+            "slug": "using-the-app"
+          },
+          "depth": 2
         }, {
           "type": "heading",
           "data": {
@@ -82,6 +368,389 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
             "slug": "author"
           },
           "depth": 2
+        }
+      ]
+    }, {
+      "type": "folder",
+      "data": {
+        "path": "views",
+        "title": "views"
+      },
+      "depth": 1,
+      "children": [
+        {
+          "type": "folder",
+          "data": {
+            "path": "views/comments",
+            "title": "comments"
+          },
+          "depth": 2,
+          "children": [
+            {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/comments/comment.jade",
+                "projectPath": "app/views/comments/comment.jade",
+                "targetPath": "views/comments/comment",
+                "pageTitle": "views/comments/comment",
+                "title": "comment"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/comments/form.jade",
+                "projectPath": "app/views/comments/form.jade",
+                "targetPath": "views/comments/form",
+                "pageTitle": "views/comments/form",
+                "title": "form"
+              },
+              "depth": 3,
+              "outline": []
+            }
+          ]
+        }, {
+          "type": "folder",
+          "data": {
+            "path": "views/includes",
+            "title": "includes"
+          },
+          "depth": 2,
+          "children": [
+            {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/includes/foot.jade",
+                "projectPath": "app/views/includes/foot.jade",
+                "targetPath": "views/includes/foot",
+                "pageTitle": "views/includes/foot",
+                "title": "foot"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/includes/footer.jade",
+                "projectPath": "app/views/includes/footer.jade",
+                "targetPath": "views/includes/footer",
+                "pageTitle": "views/includes/footer",
+                "title": "footer"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/includes/head.jade",
+                "projectPath": "app/views/includes/head.jade",
+                "targetPath": "views/includes/head",
+                "pageTitle": "views/includes/head",
+                "title": "head"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/includes/header.jade",
+                "projectPath": "app/views/includes/header.jade",
+                "targetPath": "views/includes/header",
+                "pageTitle": "views/includes/header",
+                "title": "header"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/includes/tweet.jade",
+                "projectPath": "app/views/includes/tweet.jade",
+                "targetPath": "views/includes/tweet",
+                "pageTitle": "views/includes/tweet",
+                "title": "tweet"
+              },
+              "depth": 3,
+              "outline": []
+            }
+          ]
+        }, {
+          "type": "folder",
+          "data": {
+            "path": "views/layouts",
+            "title": "layouts"
+          },
+          "depth": 2,
+          "children": [
+            {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/layouts/default.jade",
+                "projectPath": "app/views/layouts/default.jade",
+                "targetPath": "views/layouts/default",
+                "pageTitle": "views/layouts/default",
+                "title": "default"
+              },
+              "depth": 3,
+              "outline": []
+            }
+          ]
+        }, {
+          "type": "folder",
+          "data": {
+            "path": "views/tweets",
+            "title": "tweets"
+          },
+          "depth": 2,
+          "children": [
+            {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/tweets/edit.jade",
+                "projectPath": "app/views/tweets/edit.jade",
+                "targetPath": "views/tweets/edit",
+                "pageTitle": "views/tweets/edit",
+                "title": "edit"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/tweets/form.jade",
+                "projectPath": "app/views/tweets/form.jade",
+                "targetPath": "views/tweets/form",
+                "pageTitle": "views/tweets/form",
+                "title": "form"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/tweets/index.jade",
+                "projectPath": "app/views/tweets/index.jade",
+                "targetPath": "views/tweets/index",
+                "pageTitle": "views/tweets/index",
+                "title": "index"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/tweets/new.jade",
+                "projectPath": "app/views/tweets/new.jade",
+                "targetPath": "views/tweets/new",
+                "pageTitle": "views/tweets/new",
+                "title": "new"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/tweets/show.jade",
+                "projectPath": "app/views/tweets/show.jade",
+                "targetPath": "views/tweets/show",
+                "pageTitle": "views/tweets/show",
+                "title": "show"
+              },
+              "depth": 3,
+              "outline": []
+            }
+          ]
+        }, {
+          "type": "folder",
+          "data": {
+            "path": "views/users",
+            "title": "users"
+          },
+          "depth": 2,
+          "children": [
+            {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/users/auth.jade",
+                "projectPath": "app/views/users/auth.jade",
+                "targetPath": "views/users/auth",
+                "pageTitle": "views/users/auth",
+                "title": "auth"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/users/login.jade",
+                "projectPath": "app/views/users/login.jade",
+                "targetPath": "views/users/login",
+                "pageTitle": "views/users/login",
+                "title": "login"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/users/show.jade",
+                "projectPath": "app/views/users/show.jade",
+                "targetPath": "views/users/show",
+                "pageTitle": "views/users/show",
+                "title": "show"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".jade"],
+                  "pygmentsLexer": "jade",
+                  "singleLineComment": ["//", "//-"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "Jade"
+                },
+                "sourcePath": "/Users/vinitkumar/projects/javascript/node-twitter/app/views/users/signup.jade",
+                "projectPath": "app/views/users/signup.jade",
+                "targetPath": "views/users/signup",
+                "pageTitle": "views/users/signup",
+                "title": "signup"
+              },
+              "depth": 3,
+              "outline": []
+            }
+          ]
         }
       ]
     }

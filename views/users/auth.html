@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><title>views/users/auth</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../../"><meta name="groc-document-path" content="views/users/auth"><meta name="groc-project-path" content="app/views/users/auth.jade"><meta name="groc-github-url" content="https://github.com/vinitkumar/node-twitter"><link rel="stylesheet" type="text/css" media="all" href="../../assets/style.css"><script type="text/javascript" src="../../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/vinitkumar/node-twitter/blob/master/app/views/users/auth.jade">app/views/users/auth.jade</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="nt">extends</span> ../layouts/default
+
+<span class="nt">block</span> content
+  <span class="nc">.row</span>
+    <span class="nc">.span2</span>
+    <span class="nc">.span8.login</span>
+            <span class="nt">a</span>(<span class="na">href=</span><span class="s">&quot;/auth/facebook&quot;</span>)
+                <span class="nt">i</span>(<span class="na">class=</span><span class="s">&quot;icon-facebook icon-4x&quot;</span>)
+            <span class="nt">a</span>(<span class="na">href=</span><span class="s">&quot;/auth/github&quot;</span>)
+                <span class="nt">i</span>(<span class="na">class=</span><span class="s">&quot;icon-github icon-4x&quot;</span>)
+            <span class="nt">a</span>(<span class="na">href=</span><span class="s">&quot;/auth/twitter&quot;</span>)
+                <span class="nt">i</span>(<span class="na">class=</span><span class="s">&quot;icon-twitter icon-4x&quot;</span>)
+    <span class="nc">.span2</span>
+      <span class="nt">if</span> (typeof errors !== &#39;undefined&#39;)
+        <span class="nc">.fade.in.alert.alert-block.alert-error</span>
+          <span class="nt">a</span><span class="nc">.close</span>(<span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span><span class="err">,</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0)&quot;</span>) x
+          <span class="nt">ul</span>
+            <span class="nt">each</span> error in errors
+              <span class="nt">li</span> = error.type
+
+      <span class="nt">block</span> auth</div></div></div></div></body></html>

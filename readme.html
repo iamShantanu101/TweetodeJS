@@ -1,35 +1,38 @@
-<!DOCTYPE html><html lang="en"><head><title>readme</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="readme"><meta name="groc-project-path" content="readme.md"><meta name="groc-github-url" content="https://github.com/vinitkumar/node-twitter"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/vinitkumar/node-twitter/blob/master/readme.md">readme.md</a></div></div><div id="document"><div class="segment"><div class="comments "><div class="wrapper"><h1 id="node-twitter">Node Twitter</h1>
+<!DOCTYPE html><html lang="en"><head><title>readme</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="readme"><meta name="groc-project-path" content="readme.md"><meta name="groc-github-url" content="https://github.com/vinitkumar/node-twitter"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/vinitkumar/node-twitter/blob/master/readme.md">readme.md</a></div></div><div id="document"><div class="segment"><div class="comments "><div class="wrapper"><h2 id="node-twitter">Node Twitter</h2>
 
-<p>This project is an attempt to build a twitter clone in node.</p>
+<p>Twitter Clone written in Node.js.</p>
 
-<p><img src="public/img/ntwitter.gif" alt="ntwitter" title="" /></p>
+<p><img src="http://recordit.co/zdUvpAp7IS.gif" alt="ntwitter" title="" /></p>
 
-<h3 id="installation-instruction">Installation instruction</h3>
+<h2 id="installation">Installation</h2>
+
+<p>First of all:</p>
 
 <ul>
-<li>Install node  and npm here (http://nodejs.org)</li>
+<li>Install node and npm here (http://nodejs.org)</li>
 <li>Install mongodb (http://docs.mongodb.org/manual/installation/)</li>
 </ul>
 
-<p>When you have these installed, clone the project:</p>
+<p>Then clone the project:</p>
 
 <pre><code class="bash">$ git clone git@github.com:vinitkumar/node-twitter.git
 $ cd node-twitter
 $ npm install
+$ cp config/config.local.js config/config.js
 </code></pre>
 
-<p>By above step you will get all required libraries and node modules. 
-Once done, go to these links:</p>
+<p>Once done, go to these links and create your own apps. Enter the information in <code>config.js</code>. </p>
 
 <ul>
 <li><a href="http://developer.facebook.com">Facebook Developer</a></li>
 <li><a href="https://github.com/settings/applications">Github Developer</a></li>
+<li><a href="https://dev.twitter.com/">Twitter Developer</a></li>
 </ul>
 
-<p>and create your own apps on these platform, since the applications uses these two for login.
-Once you have entered the application app id and secret. Just do </p>
+<h2 id="using-the-app">Using the App</h2>
 
-<pre><code class="bash">$ npm start
+<pre><code class="bash">$ mongod // in a seperate tab
+$ npm start 
 </code></pre>
 
 <p>This will run the app on <a href="http://localhost:3000">http://localhost:3000</a></p>
@@ -43,44 +46,4 @@ Once you have entered the application app id and secret. Just do </p>
 
 <h2 id="author">Author</h2>
 
-<p>Vinit Kumar, @vinitkumar (Github) , @vinitkme (Twitter)</p>
-
-<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/vinitkumar/node-twitter/trend.png" alt="Bitdeli Badge" title="" /></a></p>
-
-<p>=======</p>
-
-<p>Developer Certificate of Origin
-Version 1.1</p>
-
-<p>Copyright (C) 2004, 2006 The Linux Foundation and its contributors.
-660 York Street, Suite 102,
-San Francisco, CA 94110 USA</p>
-
-<p>Everyone is permitted to copy and distribute verbatim copies of this
-license document, but changing it is not allowed.</p>
-
-<p>Developer's Certificate of Origin 1.1</p>
-
-<p>By making a contribution to this project, I certify that:</p>
-
-<p>(a) The contribution was created in whole or in part by me and I
-    have the right to submit it under the open source license
-    indicated in the file; or</p>
-
-<p>(b) The contribution is based upon previous work that, to the best
-    of my knowledge, is covered under an appropriate open source
-    license and I have the right under that license to submit that
-    work with modifications, whether created in whole or in part
-    by me, under the same open source license (unless I am
-    permitted to submit under a different license), as indicated
-    in the file; or</p>
-
-<p>(c) The contribution was provided directly to me by some other
-    person who certified (a), (b) or (c) and I have not modified
-    it.</p>
-
-<p>(d) I understand and agree that this project and the contribution
-    are public and that a record of the contribution (including all
-    personal information I submit with it, including my sign-off) is
-    maintained indefinitely and may be redistributed consistent with
-    this project or the open source license(s) involved.</p></div></div></div></div></body></html>
+<p>Vinit Kumar, @vinitkumar (Github) </p></div></div></div></div></body></html>

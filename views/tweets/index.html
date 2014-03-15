@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en"><head><title>views/tweets/index</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../../"><meta name="groc-document-path" content="views/tweets/index"><meta name="groc-project-path" content="app/views/tweets/index.jade"><meta name="groc-github-url" content="https://github.com/vinitkumar/node-twitter"><link rel="stylesheet" type="text/css" media="all" href="../../assets/style.css"><script type="text/javascript" src="../../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/vinitkumar/node-twitter/blob/master/app/views/tweets/index.jade">app/views/tweets/index.jade</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="nt">extends</span> ../layouts/default
+
+
+<span class="nt">block</span> content
+  <span class="nc">.row.twitter-container</span>
+    <span class="nc">.col-lg-4</span> 
+      <span class="nc">.logged-user</span>
+        <span class="nt">p</span> <span class="si">#{</span><span class="n">req</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="si">}</span>
+        <span class="p">-</span> <span class="k">if</span> <span class="o">(</span><span class="n">req</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">provider</span> <span class="o">==</span> <span class="-Symbol">&#39;facebook</span><span class="err">&#39;</span><span class="o">)</span>
+          <span class="nt">img</span>(<span class="na">class=</span><span class="s">&#39;profile-image&#39;</span><span class="err">,</span> <span class="na">src=</span><span class="s">&#39;http://graph.facebook.com/&#39;</span><span class="err">+</span><span class="na">req</span><span class="err">.</span><span class="na">user</span><span class="err">.</span><span class="na">facebook</span><span class="err">.</span><span class="na">id</span><span class="err">+&#39;/</span><span class="na">picture</span><span class="err">&#39;</span>)
+        <span class="p">-</span> <span class="k">if</span> <span class="o">(</span><span class="n">req</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">provider</span> <span class="o">==</span> <span class="-Symbol">&#39;github</span><span class="err">&#39;</span><span class="o">)</span>
+          <span class="nt">img</span>(<span class="na">class=</span><span class="s">&#39;profile-image&#39;</span><span class="err">,</span> <span class="na">src=</span><span class="nv">req</span><span class="err">.</span><span class="na">user</span><span class="err">.</span><span class="na">github</span><span class="err">.</span><span class="na">avatar_url</span>)
+        <span class="p">-</span> <span class="k">if</span> <span class="o">(</span><span class="n">req</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">provider</span> <span class="o">==</span> <span class="-Symbol">&#39;twitter</span><span class="err">&#39;</span><span class="o">)</span>
+          <span class="nt">img</span>(<span class="na">class=</span><span class="s">&#39;profile-image&#39;</span><span class="err">,</span> <span class="na">src=</span><span class="s">&quot;#{req.user.twitter.profile_image_url}&quot;</span>)
+
+        <span class="nt">a</span><span class="nc">.btn.btn-primary.flat.btn-lg</span>(<span class="na">data-toggle=</span><span class="s">&#39;modal&#39;</span><span class="err">,</span> <span class="na">href=</span><span class="s">&#39;#myModal&#39;</span>) New Tweet
+
+        <span class="nt">iframe</span>(<span class="na">src=</span><span class="s">&#39;http://ghbtns.com/github-btn.html?user=vinitkumar&amp;type=follow&amp;count=true&#39;</span><span class="err">,</span> <span class="na">allowtransparency=</span><span class="s">&#39;true&#39;</span><span class="err">,</span> <span class="na">frameborder=</span><span class="s">&#39;0&#39;</span><span class="err">,</span> <span class="na">scrolling=</span><span class="s">&#39;0&#39;</span><span class="err">,</span> <span class="na">width=</span><span class="s">&#39;165&#39;</span><span class="err">,</span> <span class="na">height=</span><span class="s">&#39;20&#39;</span>) 
+        <span class="nf">#myModal</span><span class="nc">.modal.fade</span>
+          <span class="nc">.modal-dialog</span>
+            <span class="nc">.modal-content</span>
+              <span class="nc">.modal-header</span>
+                <span class="nt">button</span><span class="nc">.close</span>(<span class="na">type=</span><span class="s">&#39;button&#39;</span><span class="err">,</span> <span class="na">data-dismiss=</span><span class="s">&#39;modal&#39;</span><span class="err">,</span> <span class="na">aria-hidden=</span><span class="s">&#39;true&#39;</span>) ×
+                <span class="nt">h4</span><span class="nc">.modal-title</span> New Tweet
+              <span class="nc">.modal-body</span>
+                <span class="nc">.row</span>
+                  <span class="nt">form</span>(<span class="na">method=</span><span class="s">&#39;post&#39;</span><span class="err">,</span> <span class="na">action=</span><span class="s">&#39;/tweets&#39;</span><span class="err">,</span> <span class="na">enctype=</span><span class="s">&#39;multipart/form-data&#39;</span>)
+                    <span class="nc">.control-group</span>
+                      <span class="nt">label</span><span class="nc">.control-label</span>(<span class="na">for=</span><span class="s">&#39;tweet&#39;</span>)
+                      <span class="nt">br</span>
+                      <span class="nc">.controls</span>
+                        <span class="nt">textarea</span><span class="nc">.flat.form-control</span>(<span class="na">type=</span><span class="s">&#39;text&#39;</span><span class="err">,</span> <span class="na">name=</span><span class="s">&#39;body&#39;</span><span class="err">,</span> <span class="na">placeholder=</span><span class="s">&#39;Enter your tweet here&#39;</span><span class="err">,</span> <span class="na">maxlength=</span><span class="s">&#39;140&#39;</span>)
+                    <span class="nt">br</span>
+                    <span class="nc">.form-actions</span>
+                      <span class="nt">button</span><span class="nc">.btn.btn-primary.flat</span>(<span class="na">type=</span><span class="s">&#39;submit&#39;</span>) Publish Tweet
+                      <span class="nt">a</span><span class="nc">.btn</span>(<span class="na">href=</span><span class="s">&#39;/tweets&#39;</span><span class="err">,</span> <span class="na">title=</span><span class="s">&#39;cancel&#39;</span>) Cancel
+              <span class="nc">.modal-footer</span>
+                <span class="nt">p</span> Hope you enjoy it!
+    <span class="nc">.col-lg-8</span>
+      <span class="nt">each</span> tweet in tweets
+        <span class="nc">.well.flat</span>
+          <span class="nc">.tweet</span>
+            <span class="nc">.row</span>
+              <span class="nc">.col-lg-6.pull-left</span>
+                <span class="nt">h5</span>
+                  <span class="nt">a</span>(<span class="na">href=</span><span class="s">&quot;/users/&quot;</span><span class="err">+</span><span class="na">tweet</span><span class="err">.</span><span class="na">user</span><span class="err">.</span><span class="na">_id</span>)<span class="p">=</span><span class="n">tweet</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">name</span>
+              <span class="nc">.col-lg-5.date</span>
+                <span class="nc">.pull-right</span>
+                  <span class="err">= </span><span class="nt">formatDate</span>(<span class="na">tweet</span><span class="err">.</span><span class="na">createdAt</span><span class="err">,</span> <span class="err">&quot;%</span><span class="na">b</span> <span class="err">%</span><span class="na">d</span><span class="err">,</span> <span class="err">%</span><span class="na">Y</span> <span class="na">at</span> <span class="err">%</span><span class="na">I:</span><span class="err">%</span><span class="na">M</span> <span class="err">%</span><span class="na">p</span><span class="err">&quot;</span>)
+            <span class="nt">p</span><span class="p">=</span><span class="n">tweet</span><span class="o">.</span><span class="n">body</span>
+            <span class="nt">form</span><span class="nc">.center.form-inline.confirm.settings-tweet</span>(<span class="na">action=</span><span class="s">&quot;/tweets/&quot;</span><span class="err">+</span><span class="na">tweet</span><span class="err">.</span><span class="na">id</span><span class="err">,</span> <span class="na">method=</span><span class="s">&quot;post&quot;</span>)
+              <span class="nt">if</span> (tweet.user._id == req.user.id)
+                 <span class="nt">a</span><span class="nc">.btn.btn-success.flat.edit</span>(<span class="na">href=</span><span class="s">&#39;/tweets/&#39;</span><span class="err">+</span><span class="na">tweet</span><span class="err">.</span><span class="na">_id</span><span class="err">+&#39;/</span><span class="na">edit</span><span class="err">&#39;,</span> <span class="na">title=</span><span class="s">&quot;edit&quot;</span>) Edit
+                 <span class="nt">input</span>(<span class="na">type=</span><span class="s">&quot;hidden&quot;</span><span class="err">,</span> <span class="na">name=</span><span class="s">&quot;_method&quot;</span><span class="err">,</span> <span class="na">value=</span><span class="s">&quot;DELETE&quot;</span>)
+                 <span class="nt">button</span><span class="nc">.btn.flat</span>(<span class="na">type=</span><span class="s">&quot;submit&quot;</span>) delete
+               <span class="nt">if</span> (tweet.user._id != req.user.id)
+                 <span class="nt">a</span><span class="nc">.btn.btn-success</span>(<span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="err">,</span> <span class="na">class=</span><span class="s">&quot;favorite&quot;</span><span class="err">,</span> <span class="na">data-tweetId=</span><span class="nv">tweet</span><span class="err">.</span><span class="na">_id</span><span class="err">,</span> <span class="na">title=</span><span class="s">&quot;favorite&quot;</span>) Favorite
+          <span class="nc">.comment</span>
+            <span class="nt">each</span> comment in tweet.comments
+              <span class="nt">include</span> ../comments/comment
+            <span class="nt">hr</span>
+            <span class="nt">include</span> ../comments/form</div></div></div></div></body></html>

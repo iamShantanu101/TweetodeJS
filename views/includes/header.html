@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><title>views/includes/header</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../../"><meta name="groc-document-path" content="views/includes/header"><meta name="groc-project-path" content="app/views/includes/header.jade"><meta name="groc-github-url" content="https://github.com/vinitkumar/node-twitter"><link rel="stylesheet" type="text/css" media="all" href="../../assets/style.css"><script type="text/javascript" src="../../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/vinitkumar/node-twitter/blob/master/app/views/includes/header.jade">app/views/includes/header.jade</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="nt">body</span><span class="nc">.bs-docs-home</span>
+       <span class="nt">Docs</span> master nav
+    <span class="nc">.navbar.navbar-inverse.navbar-fixed-top.bs-docs-nav</span>
+      <span class="nc">.container</span>
+        <span class="nt">a</span><span class="nc">.navbar-brand</span>(<span class="na">href=</span><span class="s">&#39;/&#39;</span>) Node Twitter
+        <span class="nt">button</span><span class="nc">.navbar-toggle</span>(<span class="na">type=</span><span class="s">&#39;button&#39;</span><span class="err">,</span> <span class="na">data-toggle=</span><span class="s">&#39;collapse&#39;</span><span class="err">,</span> <span class="na">data-target=</span><span class="s">&#39;.bs-navbar-collapse&#39;</span>)
+          <span class="nt">span</span><span class="nc">.icon-bar</span>
+          <span class="nt">span</span><span class="nc">.icon-bar</span>
+          <span class="nt">span</span><span class="nc">.icon-bar</span>
+        <span class="nc">.nav-collapse.collapse.bs-navbar-collapse.pull-right</span>
+          <span class="nt">ul</span><span class="nc">.nav.navbar-nav</span>
+            <span class="nt">if</span> (req.isAuthenticated())
+              <span class="nt">li</span>
+                <span class="nt">a</span>(<span class="na">href=</span><span class="s">&quot;/users/&quot;</span><span class="err">+</span><span class="na">req</span><span class="err">.</span><span class="na">user</span><span class="err">.</span><span class="na">id</span><span class="err">,</span> <span class="na">title=</span><span class="s">&quot;Profile&quot;</span>)
+                  <span class="nt">i</span><span class="nc">.icon-male.icon-light.icon-2x</span>
+              <span class="nt">li</span>
+                <span class="nt">a</span>(<span class="na">href=</span><span class="s">&quot;/logout&quot;</span><span class="err">,</span> <span class="na">title=</span><span class="s">&quot;logout&quot;</span>)
+                  <span class="nt">i</span><span class="nc">.icon-off.icon-light.icon-2x</span></div></div></div></div></body></html>

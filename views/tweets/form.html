@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"><head><title>views/tweets/form</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../../"><meta name="groc-document-path" content="views/tweets/form"><meta name="groc-project-path" content="app/views/tweets/form.jade"><meta name="groc-github-url" content="https://github.com/vinitkumar/node-twitter"><link rel="stylesheet" type="text/css" media="all" href="../../assets/style.css"><script type="text/javascript" src="../../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/vinitkumar/node-twitter/blob/master/app/views/tweets/form.jade">app/views/tweets/form.jade</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="nt">extends</span> ../layouts/default
+
+
+<span class="nt">block</span> content
+  <span class="nc">.row</span>
+  <span class="nt">a</span><span class="nc">.btn.btn-primary.btn-lg</span>(<span class="na">data-toggle=</span><span class="s">&#39;modal&#39;</span><span class="err">,</span> <span class="na">href=</span><span class="s">&#39;#myModal&#39;</span>) Edit
+  <span class="nf">#myModal</span><span class="nc">.modal.fade</span>
+    <span class="nc">.modal-dialog</span>
+      <span class="nc">.modal-content</span>
+        <span class="nc">.modal-header</span>
+          <span class="nt">button</span><span class="nc">.close</span>(<span class="na">type=</span><span class="s">&#39;button&#39;</span><span class="err">,</span> <span class="na">data-dismiss=</span><span class="s">&#39;modal&#39;</span><span class="err">,</span> <span class="na">aria-hidden=</span><span class="s">&#39;true&#39;</span>) ×
+          <span class="nt">h4</span><span class="nc">.modal-title</span> Edit Tweet
+          <span class="nt">i</span><span class="nc">.icon-twitter.icon-2x</span>
+        <span class="nc">.modal-body</span>
+          <span class="nc">.tweet-body</span>
+              <span class="p">-</span> <span class="k">var</span> <span class="n">action</span> <span class="k">=</span> <span class="err">&#39;</span><span class="o">/</span><span class="n">tweets</span><span class="err">&#39;</span>
+              <span class="nt">if</span> (!tweet.isNew)
+                <span class="p">-</span> <span class="n">action</span> <span class="o">+=</span> <span class="sc">&#39;/&#39;</span><span class="o">+</span><span class="n">tweet</span><span class="o">.</span><span class="n">id</span>
+
+              <span class="nt">if</span> (typeof errors !== &#39;undefined&#39;)
+                <span class="nc">.fade.in.alert.alert-block.alert-error</span>
+                  <span class="nt">a</span><span class="nc">.close</span>(<span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span><span class="err">,</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0)&quot;</span>) x
+                  <span class="nt">ul</span>
+                    <span class="nt">each</span> errors in errors
+                      <span class="nt">li</span> = error.type
+
+
+          
+              <span class="nt">form</span>(<span class="na">method=</span><span class="s">&quot;post&quot;</span><span class="err">,</span> <span class="na">action=</span><span class="nv">action</span><span class="err">,</span> <span class="na">enctype=</span><span class="s">&quot;multipart/form-data&quot;</span>)
+                <span class="nt">if</span> (!tweet.isNew)
+                  <span class="nt">input</span>(<span class="na">type=</span><span class="s">&quot;hidden&quot;</span><span class="err">,</span> <span class="na">name=</span><span class="s">&quot;_method&quot;</span><span class="err">,</span> <span class="na">value=</span><span class="s">&quot;PUT&quot;</span>)
+
+                <span class="nc">.control-group</span>
+                  <span class="nt">label</span><span class="nc">.control-label</span>(<span class="na">for=</span><span class="s">&#39;tweet&#39;</span>)
+                  <span class="nt">br</span>
+                  <span class="nc">.controls</span>
+                    <span class="nt">textarea</span>(<span class="na">type=</span><span class="s">&#39;text&#39;</span><span class="err">,</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span><span class="err">,</span> <span class="na">name=</span><span class="s">&quot;body&quot;</span><span class="err">,</span>
+                      <span class="na">placeholder=</span><span class="s">&#39;Enter your tweet here&#39;</span><span class="err">,</span><span class="na">maxlength=</span><span class="s">&#39;140&#39;</span>)<span class="p">=</span><span class="n">tweet</span><span class="o">.</span><span class="n">body</span>
+                <span class="nt">br</span>
+                <span class="nc">.form-actions</span>
+                  <span class="nt">button</span><span class="nc">.btn.btn-primary</span>(<span class="na">type=</span><span class="s">&#39;submit&#39;</span>) Publish Tweet
+                  <span class="err">&amp;</span><span class="nt">nbsp</span>;
+                  <span class="nt">a</span><span class="nc">.btn</span>(<span class="na">href=</span><span class="s">&#39;/tweets&#39;</span><span class="err">,</span> <span class="na">title=</span><span class="s">&quot;cancel&quot;</span>) Cancel
+
+        <span class="nc">.modal-footer</span>
+          <span class="nt">p</span> Hope you enjoy it!</div></div></div></div></body></html>

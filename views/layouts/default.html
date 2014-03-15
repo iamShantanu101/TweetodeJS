@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><title>views/layouts/default</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../../"><meta name="groc-document-path" content="views/layouts/default"><meta name="groc-project-path" content="app/views/layouts/default.jade"><meta name="groc-github-url" content="https://github.com/vinitkumar/node-twitter"><link rel="stylesheet" type="text/css" media="all" href="../../assets/style.css"><script type="text/javascript" src="../../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/vinitkumar/node-twitter/blob/master/app/views/layouts/default.jade">app/views/layouts/default.jade</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="nt">doctype</span> html
+<span class="nt">html</span>(<span class="na">lang=</span><span class="s">&#39;en&#39;</span>)
+  <span class="nt">include</span> ../includes/head
+  <span class="nt">if</span> (req.isAuthenticated())
+  <span class="nt">body</span><span class="nc">.login-screen</span>
+      <span class="nt">include</span> ../includes/header
+      <span class="nc">.container</span>
+        <span class="nt">block</span> main
+        <span class="nt">block</span> content
+    <span class="nt">include</span> ../includes/footer
+    <span class="nt">include</span> ../includes/foot</div></div></div></div></body></html>
